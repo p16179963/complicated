@@ -205,9 +205,9 @@ p {
 }
 
 #yellow_section img {
-	width: 18%;
+	width: 16%;
 	display: inline-block;
-	padding-left: 15%;
+	padding-left: 17%;
 	padding-top: 2%;
 }
 
@@ -222,9 +222,9 @@ p {
 }
 
 #blue_section img {
-	width: 17%;
+	width: 15%;
 	display: inline-block;
-	padding-left: 15%;
+	padding-left: 17%;
 	padding-top: 2%;
 }
 
@@ -239,9 +239,9 @@ p {
 }
 
 #purple_section img {
-	width: 13%;
+	width: 11%;
 	display: inline-block;
-	padding-left: 18%;
+	padding-left: 19%;
 	padding-top: 2%;
 }
 
@@ -511,7 +511,7 @@ blockquote.twitter-tweet a:focus {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 553px) {
 	#pink_section h2 {
 		font-size: 2.5em;
 	}
@@ -616,16 +616,36 @@ blockquote.twitter-tweet a:focus {
 		font-size: 3em;
 	}
 
+	#pink_section img {
+		width: 16%;
+		padding-left: 20%;
+	}
+
 	#yellow_section h2 {
 		font-size: 3em;
+	}
+
+	#yellow_section img {
+		width: 13%;
+		padding-left: 21%;
 	}
 
 	#blue_section h2 {
 		font-size: 3em;
 	}
 
+	#blue_section img {
+		width: 12%;
+		padding-left: 21%;
+	}
+
 	#purple_section h2 {
 		font-size: 3em;
+	}
+
+	#purple_section img {
+		width: 9%;
+		padding-left: 22%;
 	}
 
 }
@@ -657,6 +677,7 @@ blockquote.twitter-tweet a:focus {
 	#purple_section h2 {
 		font-size: 2em;
 	}
+
 }
 
 
@@ -715,5 +736,19 @@ blockquote.twitter-tweet a:focus {
 	#excited .text {
 		margin-left: 50px;
 		width: 34.8%;
+	}
+
+	#yellow_section img {
+		width: 16%;
+	}
+
+	#blue_section img {
+		width: 15%;
+		padding-left: 16.5%;
+	}
+
+	#purple_section img {
+		width: 11%;
+		padding-left: 23%;
 	}
 }

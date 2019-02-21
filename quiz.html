@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/complicated.css">
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+		<div id="top">
+			<div id="logo">
+				<img src="images/logo.svg">
+			</div>
+		<div id="sidebar">
+			<div class="button" onclick="toggle()">
+				<div class="icon"><i class="fas fa-bars" onclick="toggleClass(this)"></i>
+				</div>
+			</div>
+
+			<a href="index.html" id="link1">Home</a>
+			<a href="characters.html" id="link2">Emotions</a>
+			<a href="countdown.html" id="link3">Countdown</a>
+			<a href="quiz.html" id="link4">Quiz</a>
+			<a href="twitter.html" id="link5"> Social </a>
+			
+		</div>
+	</div>
+
+	<div class="title">
+		<img src="images/quiz.svg">
+	</div>
+
+	<p class="quiz_text"> Test your knowledge and take the quiz! Once you've submitted your answers scroll down to see how many you got right, then use the buttons below to check your answers. Purple means the answer is incorrect and green is correct! Have fun! </p>
+
+	<div id="quiz_body">
+			<div class="quiz-container">
+				<div id="quiz"></div>
+			</div>
+		<button id="previous">Previous Question</button>
+		<button id="next">Next Question</button>
+		<button id="submit">Submit Quiz </button>
+		<div id="results">
+		</div>
+	</div>
+
+	<script src="javascript/complicated.js"></script>
+</body>
+</html>

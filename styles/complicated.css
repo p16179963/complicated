@@ -1,0 +1,719 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+/*#container_home {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas: 
+		"nav"
+		"first"
+}*/
+
+#container_emotions {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: repeat (7, auto); 
+	grid-template-areas: 
+		"nav"
+		"title"
+		"love"
+		"embarrassed"
+		"jealousy"
+		"boredom"
+		"excited";
+}
+
+#container_countdown {
+	background-color: black;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto auto auto auto auto;
+	grid-template-areas: 
+		"nav"
+		"title"
+		"text"
+		"el1"
+		"el2"
+		"el3"
+		"el4";
+}
+
+
+ #top {
+ 	z-index: 2;
+ 	width: 100%;
+ 	position: fixed;
+ 	background-color: white;
+ 	grid-area: nav;
+ }
+
+ #logo {
+ 	width: 25%;
+ 	padding: 2% 20% 2% 5%;
+ 	float: left;
+ }
+
+
+#sidebar {
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	right: -200px;
+	transition: 0.5s linear;
+}
+
+.active#sidebar {
+	right: 0px;
+}
+
+#sidebar a {
+	font-family: "Raleway";
+	text-decoration: none;
+	padding: 15px 10px;
+	padding-bottom: 15px;
+	line-height: 50px;
+	border-bottom: 1px solid black;
+	display: flex;
+	flex-direction: row;
+}
+
+#sidebar .button {
+	position: absolute;
+	right: 230px;
+	top: 20px;
+}
+
+.title {
+ 	padding-top: 12%;
+ 	grid-area: title;
+ 	background-color: black;
+ }
+
+
+#link1 {
+	color: #f41cb2;
+}
+
+#link2 {
+	color: #5d1193;
+}
+
+#link3 {
+	color: #21b510;
+}
+
+#link4 {
+	color: #2b6ce0;
+}
+
+#link5 {
+	color: #eff41c;
+}
+
+a {
+	font-weight: bold;
+}
+
+h1 {
+ 	font-family: 'Luckiest Guy', cursive;
+ 	/*position: absolute; IF SOMETHING ISNT WORKING COMMENT THIS BACK IN*/
+  	z-index: 10;
+  	padding-top: 14%;
+  	padding-left: 22%;
+  	font-size: 3em;
+  	color: white;
+  	letter-spacing: 0.06em;
+}
+
+h2 {
+ 	font-family: 'Luckiest Guy', cursive;
+ 	color: white;
+ 	padding-left: 10px;
+ 	margin: 5px;
+ 	font-size: 2em;
+ 	letter-spacing: 0.06em;
+}
+
+h3 {
+	font-family: 'Luckiest Guy', cursive;
+}
+
+p {
+ 	font-family: 'Raleway', 'sans-serif';
+ 	color: white;
+ 	padding-left: 10px;
+ 	padding-bottom: 15px;
+ 	margin-bottom: 0;
+}
+
+#home_title {
+	font-family: 'Luckiest Guy', cursive;
+	color: #21b510;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	font-size: 60px;
+	background: transparent;
+}
+
+#first_section {
+	padding-top: 15%;
+	grid-area: first_section;
+}
+
+#buttons {
+	width: 90%;
+	text-align: center;
+}
+.green {
+	background-color: #21b510;
+	border-radius: 15%;
+	border: 3px solid white;
+	margin-left: 12%;
+}
+
+.green a {
+	color: white;
+	text-decoration: none;
+}
+
+#pink_section {
+	background-color: #f41cb2;
+	grid-area: pink_section;
+}
+
+#pink_section img {
+	width: 20%;
+	display: inline-block;
+	padding-left: 15%;
+	padding-top: 2%;
+}
+
+#pink_section h2 {
+	display: inline-block;
+	padding-left: 15%;
+}
+
+#yellow_section {
+	background-color: #eff41c;
+	grid-area: yellow_section;
+}
+
+#yellow_section img {
+	width: 18%;
+	display: inline-block;
+	padding-left: 15%;
+	padding-top: 2%;
+}
+
+#yellow_section h2 {
+	display: inline-block;
+	padding-left: 17%;
+}
+
+#blue_section {
+	background-color: #2b6ce0;
+	grid-area: blue_section;
+}
+
+#blue_section img {
+	width: 17%;
+	display: inline-block;
+	padding-left: 15%;
+	padding-top: 2%;
+}
+
+#blue_section h2 {
+	display: inline-block;
+	padding-left: 18%;
+}
+
+#purple_section {
+	background-color: #5d1193;
+	grid-area: purple_section;
+}
+
+#purple_section img {
+	width: 13%;
+	display: inline-block;
+	padding-left: 18%;
+	padding-top: 2%;
+}
+
+#purple_section h2 {
+	display: inline-block;
+	padding-left: 20%;
+}
+
+.countdown_text {
+	color: #eff41c;
+	font-size: 100px;
+	text-align: center;
+	grid-area: text;
+}
+
+#container_countdown p {
+	font-family: 'Luckiest Guy', cursive;
+	font-size: 2em;
+	margin-top: 0;
+	margin-bottom: 20px;
+	letter-spacing: 0.06em;
+}
+
+#love {
+ 	background-color: #f41cb2;
+ 	grid-area: love;
+ }
+
+#love img {
+	width: 40%;
+	padding-left: 30%;
+	padding-top: 3%;
+}
+
+#embarrassed {
+	background-color: #5d1193;
+	grid-area: embarrassed;
+}
+
+#embarrassed img {
+	width: 20%;
+	padding-left: 40%;
+	padding-top: 3%;
+}
+
+#jealousy {
+	background-color: #21b510;
+	grid-area: jealousy;
+}
+
+#jealousy img {
+	width: 30%;
+	padding-left: 35%;
+	padding-top: 3%;
+}
+
+#boredom {
+	background-color: #2b6ce0;
+	grid-area: boredom;
+}
+
+#boredom img {
+	width: 30%;
+	padding-left: 35%;
+	padding-top: 3%;
+}
+
+#excited {
+	background-color: #eff41c;
+	grid-area: excited;
+}
+
+#excited img {
+	width: 30%;
+	padding-left: 35%;
+	padding-top: 3%;
+}
+
+#el1 {
+	grid-area: el1;
+	margin: auto;
+}
+
+#el1 p {
+	color: #f41cb2;
+	text-align: center;
+}
+
+#days {
+	color: #f41cb2;
+	font-size: 9em;
+	font-family: "Luckiest Guy";
+}
+
+#el2 {
+	grid-area: el2;
+	margin: auto;
+}
+
+#el2 p {
+	color: #5d1193;
+	text-align: center;
+}
+
+#hours {
+	color: #5d1193;
+	font-size: 9em;
+	font-family: "Luckiest Guy";
+}
+
+#el3 {
+	grid-area: el3;
+	margin: auto;
+}
+
+#el3 p {
+	color: #21b510;
+	text-align: center;
+}
+
+#minutes {
+	color: #21b510;
+	font-size: 9em;
+	font-family: "Luckiest Guy";
+}
+
+#el4 {
+	grid-area: el4;
+	margin: auto;
+}
+
+#el4 p {
+	color: #2b6ce0;
+	text-align: center;
+}
+
+#seconds {
+	color: #2b6ce0;
+	font-size: 9em;
+	font-family: "Luckiest Guy";
+}
+
+#quiz_body{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    background-color: black;
+}
+
+h1{
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: black;
+  color: #fff;
+}
+
+.question{
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #2b6ce0;
+}
+
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+  color: #eff41c;
+}
+
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+button{
+  font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
+    background-color: #f41cb2;
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover{
+    background-color: #5d1193;
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+}
+
+
+.quiz_text {
+	color: #21b510;
+	text-align: center;
+	font-size: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#twitter_container {
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+.tweet {
+  padding: 10px;
+  margin: auto;
+  z-index: -1;
+}
+
+blockquote.twitter-tweet {
+  display: inline-block;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+  border-color: #eee #ddd #bbb;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  margin: 10px 5px;
+  padding: 0 16px 16px 16px;
+  max-width: 468px;
+}
+
+blockquote.twitter-tweet p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+blockquote.twitter-tweet a {
+  color: inherit;
+  font-weight: normal;
+  text-decoration: none;
+  outline: 0 none;
+}
+
+blockquote.twitter-tweet a:hover,
+blockquote.twitter-tweet a:focus {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 550px) {
+	#pink_section h2 {
+		font-size: 2.5em;
+	}
+
+	#yellow_section h2 {
+		font-size: 2.5em;
+	}
+
+	#blue_section h2 {
+		font-size: 2.5em;
+	}
+
+	#purple_section h2 {
+		font-size: 2.5em;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.button {
+		display: none;
+	}
+
+	#sidebar {
+		display: flex;
+		background: none;
+		padding-top: 1%;
+		padding-right: 400px;
+		transition: none;
+		height: auto;
+	}
+
+	#sidebar a {
+		border: none;
+	}
+
+	#container_countdown {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: auto auto auto auto auto;
+		grid-template-areas: 
+			"nav nav"
+			"title title"
+			"text text"
+			"el1 el2"
+			"el3 el4"
+	}
+
+	.text {
+		display: inline;
+		float: left;
+		width: 37%;
+		padding-left: 10%;
+		padding-top: 3%;
+	}
+
+	#love img {
+		display: inline;
+		float: right;
+		padding-left: 0;
+		padding-right: 12%;
+		padding-bottom: 3%;
+		width: 24%;
+	}
+
+	#embarrassed img {
+		display: inline;
+		float: right;
+		padding-left: 0;
+		padding-right: 18%;
+		padding-bottom: 3%;
+		width: 12%;
+	}
+
+	#jealousy img {
+		display: inline;
+		float: right;
+		padding-left: 0;
+		padding-right: 15%;
+		padding-bottom: 3%;
+		width: 17%;
+	}
+
+	#boredom img {
+		display: inline;
+		float: right;
+		padding-left: 0;
+		padding-right: 17%;
+		padding-bottom: 3%;
+		width: 14%;
+	}
+
+	#excited img {
+		display: inline;
+		float: right;
+		padding-left: 0;
+		padding-right: 17%;
+		padding-bottom: 3%;
+		width: 18%;
+	}
+
+	#pink_section h2 {
+		font-size: 3em;
+	}
+
+	#yellow_section h2 {
+		font-size: 3em;
+	}
+
+	#blue_section h2 {
+		font-size: 3em;
+	}
+
+	#purple_section h2 {
+		font-size: 3em;
+	}
+
+}
+
+@media screen and (min-width: 900px) {
+	#container_home {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas: 
+			"nav nav"
+			"first_section first_section"
+			"pink_section yellow_section"
+			"blue_section purple_section";
+	}
+
+	#pink_section h2 {
+		font-size: 2em;
+	}
+
+	#yellow_section h2 {
+		font-size: 2em;
+	}
+
+	#blue_section h2 {
+		font-size: 2em;
+	}
+
+	#purple_section h2 {
+		font-size: 2em;
+	}
+}
+
+
+@media screen and (min-width: 950px) {
+	#home_title{
+		font-size: 85px;
+	}
+
+	#container_emotions {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat (5, auto);
+		grid-template-areas: 
+			"nav nav"
+			"title title"
+			"love embarrassed"
+			"jealousy boredom"
+			"excited excited";
+	}
+
+	#container_countdown {
+		padding-bottom: 40px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas: 
+			"nav nav nav nav"
+			"title title title title"
+			"text text text text"
+			"el1 el2 el3 el4";
+	}
+
+	#sidebar {
+		padding-top: 2%;
+	}
+
+	#embarrassed img {
+		width: 15%;
+	}
+
+	#boredom img {
+		width: 20%;
+		padding-right: 15%;
+	}
+
+	#jealousy img {
+		width: 22%;
+		padding-right: 12.5%;
+	}
+
+	#excited img {
+		width: 10%;
+		padding-right: 25%;
+	}
+
+	#excited .text {
+		margin-left: 50px;
+		width: 34.8%;
+	}
+}

@@ -511,6 +511,26 @@ blockquote.twitter-tweet a:focus {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 400px) {
+	#pink_section h2 {
+		font-size: 1.25em;
+	}
+
+	#yellow_section h2 {
+		font-size: 1.25em;
+	}
+}
+
+@media screen and (min-width: 401px) {
+	#pink_section h2 {
+		font-size: 1.75em;
+	}
+
+	#yellow_section h2 {
+		font-size: 1.75em;
+	}
+}
+
 @media screen and (min-width: 553px) {
 	#pink_section h2 {
 		font-size: 2.5em;
@@ -663,7 +683,7 @@ blockquote.twitter-tweet a:focus {
 	}
 
 	#pink_section h2 {
-		font-size: 2em;
+		font-size: 1.75em;
 	}
 
 	#yellow_section h2 {
@@ -715,12 +735,12 @@ blockquote.twitter-tweet a:focus {
 	}
 
 	#embarrassed img {
-		width: 15%;
+		width: 19%;
 	}
 
 	#boredom img {
 		width: 20%;
-		padding-right: 15%;
+		padding-right: 22%;
 	}
 
 	#jealousy img {
@@ -738,13 +758,17 @@ blockquote.twitter-tweet a:focus {
 		width: 34.8%;
 	}
 
+	#pink_section img {
+		width: 20%;
+	}
+
 	#yellow_section img {
 		width: 16%;
 	}
 
 	#blue_section img {
 		width: 15%;
-		padding-left: 16.5%;
+		padding-left: 22%;
 	}
 
 	#purple_section img {

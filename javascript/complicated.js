@@ -21,8 +21,8 @@ if (document.getElementById('home_title')){
   })(); 
 
   function getDateTime() {
-    var now     = new Date(); 
-    var hour    = now.getHours(); 
+    let now     = new Date(); 
+    let hour    = now.getHours(); 
     if(hour <= 11){  
       home_title.innerHTML = "Good Morning";
     }
@@ -34,7 +34,7 @@ if (document.getElementById('home_title')){
   };
   }
 
-// MENU BAR****************************************************************
+// QUIZ****************************************************************
 
 else if(document.getElementById('quiz_body')){
   (function() {
@@ -189,19 +189,19 @@ else {
        })(); 
 
   function countdown(){
-  	var now = new Date();
-  	var eventDate = new Date(2019, 07, 10);
+  	let now = new Date();
+  	let eventDate = new Date(2019, 07, 10);
 
-  	var currentTime = now.getTime();
-  	var eventTime = eventDate.getTime();
+  	let currentTime = now.getTime();
+  	let eventTime = eventDate.getTime();
 
-  	var remTime = eventTime - currentTime;
+  	let remTime = eventTime - currentTime;
 
-  	var s = Math.floor(remTime / 1000);
+  	let s = Math.floor(remTime / 1000);
   	console.log(s);
-  	var m = Math.floor(s / 60);
-  	var h = Math.floor(m / 60);
-  	var d = Math.floor(h / 24);
+  	let m = Math.floor(s / 60);
+  	let h = Math.floor(m / 60);
+  	let d = Math.floor(h / 24);
 
   	h %= 24;
   	m %= 60;

@@ -4,15 +4,6 @@ body {
 	background-color: black;
 }
 
-/*#container_home {
-	display: grid;
-	grid-template-columns: 100%;
-	grid-template-rows: auto auto auto auto;
-	grid-template-areas: 
-		"nav"
-		"first"
-}*/
-
 #container_emotions {
 	display: grid;
 	grid-template-columns: 100%;
@@ -42,7 +33,6 @@ body {
 		"el4";
 }
 
-
  #top {
  	z-index: 2;
  	width: 100%;
@@ -56,7 +46,6 @@ body {
  	padding: 2% 20% 2% 5%;
  	float: left;
  }
-
 
 #sidebar {
 	position: fixed;
@@ -93,7 +82,6 @@ body {
  	grid-area: title;
  	background-color: black;
  }
-
 
 #link1 {
 	color: #f41cb2;
@@ -384,7 +372,7 @@ p {
 	font-family: "Luckiest Guy";
 }
 
-#quiz_body{
+#quiz_body {
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
     color: white;
@@ -393,7 +381,7 @@ p {
     background-color: black;
 }
 
-h1{
+h1 {
   font-weight: 300;
   margin: 0px;
   padding: 10px;
@@ -402,7 +390,7 @@ h1{
   color: #fff;
 }
 
-.question{
+.question {
   font-size: 30px;
   margin-bottom: 10px;
   color: #2b6ce0;
@@ -415,12 +403,12 @@ h1{
   color: #eff41c;
 }
 
-.answers label{
+.answers label {
   display: block;
   margin-bottom: 10px;
 }
 
-button{
+button {
   font-family: 'Work Sans', sans-serif;
     font-size: 22px;
     background-color: #f41cb2;
@@ -432,11 +420,11 @@ button{
     margin-bottom: 20px;
 }
 
-button:hover{
+button:hover {
     background-color: #5d1193;
 }
 
-.slide{
+.slide {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -446,17 +434,16 @@ button:hover{
   transition: opacity 0.5s;
 }
 
-.active-slide{
+.active-slide {
   opacity: 1;
   z-index: 2;
 }
 
-.quiz-container{
+.quiz-container {
   position: relative;
   height: 200px;
   margin-top: 40px;
 }
-
 
 .quiz_text {
 	color: #21b510;
@@ -475,40 +462,6 @@ button:hover{
   padding: 10px;
   margin: auto;
   z-index: -1;
-}
-
-blockquote.twitter-tweet {
-  display: inline-block;
-  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 16px;
-  border-color: #eee #ddd #bbb;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-  margin: 10px 5px;
-  padding: 0 16px 16px 16px;
-  max-width: 468px;
-}
-
-blockquote.twitter-tweet p {
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 20px;
-}
-
-blockquote.twitter-tweet a {
-  color: inherit;
-  font-weight: normal;
-  text-decoration: none;
-  outline: 0 none;
-}
-
-blockquote.twitter-tweet a:hover,
-blockquote.twitter-tweet a:focus {
-  text-decoration: underline;
 }
 
 @media screen and (max-width: 400px) {
@@ -702,7 +655,7 @@ blockquote.twitter-tweet a:focus {
 
 
 @media screen and (min-width: 950px) {
-	#home_title{
+	#home_title {
 		font-size: 85px;
 	}
 

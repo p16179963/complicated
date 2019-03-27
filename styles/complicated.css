@@ -688,7 +688,8 @@ button:hover {
 	}
 
 	#embarrassed img {
-		width: 19%;
+		width: 16%;
+		padding-right: 23%;
 	}
 
 	#boredom img {
